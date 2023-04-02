@@ -120,14 +120,18 @@ small,
 .introduction-text {
   display: flex;
   flex-direction: column;
-  grid-column: 1/7;
+  grid-column: 1/6;
 }
 
 .avatar {
-  width: auto;
-  height: auto;
-  background-image: url("http://127.0.0.1:5500/assets/avatar.png");
+  position: relative;
   background: radial-gradient(closest-side, #d4a013, #f2e8e5);
   border-radius: 100%;
-  grid-column: 7/12;
+  grid-column: 6/12;
+}
+
+.avatar img {
+  max-width: 150px;
+  max-height: 150px;
+  position: absolute;
 }
