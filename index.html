@@ -5,18 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>A.B | Portfolio</title>
     <link rel="stylesheet" href="./assets/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <!-- <link
       rel="stylesheet"
       href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
     /> -->
   </head>
   <body>
-    <div class="container">
+    <div class="">
       <nav>
+        <img class="logo" src="./assets/logo.svg" alt="" srcset="" />
+
         <ul class="nav">
           <li class="link">About me</li>
-          <li class="link">Projects</li>
-          <li class="link">Contact</li>
+          <a href="#professional_projects">
+            <li class="link">Projects</li>
+          </a>
+          <a href="mailto:amirbennasr@gmail.com">
+            <li class="link">Contact</li>
+          </a>
         </ul>
       </nav>
       <section class="introduction">
@@ -60,12 +73,106 @@
             >websites
           </p>
         </div>
-        <div class="avatar">
-          <img src="./assets/avatar.png" alt="" />
+        <div class="details">
+          <div class="avatar">
+            <img src="./assets/avatar.png" alt="" />
+          </div>
+          <div class="socials">
+            <a target="_blank" href="https://github.com/amirbenasr">
+              <i class="fa-brands fa-github fa-xl"></i>
+            </a>
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/in/amir-bennasr-428aba186/"
+            >
+              <i class="fa-brands fa-linkedin fa-xl"></i>
+            </a>
+            <a
+              target="_blank"
+              href="https://stackoverflow.com/users/4547703/amir-bennasr"
+            >
+              <i class="fa-brands fa-stack-overflow fa-xl"></i>
+            </a>
+          </div>
         </div>
       </section>
-      <section class="projects">
-        <h1>Latest Projects</h1>
+      <section id="professional_projects" class="projects">
+        <h1>Professional experience</h1>
+        <!-- project 1 -->
+        <div class="project-container">
+          <a href="https://den.social" target="_blank">
+            <span class="title">Den.social</span>
+          </a>
+          <a href="http://dragonchain.com" target="_blank">
+            <span class="company_title">© Dragonchain </span>
+          </a>
+          <p>
+            Social content platform application, made to combat fake news, by
+            using blockchain technology and decentralized governance.
+          </p>
+          <span class="subtitle">Technologies</span>
+          <span class="technologies">ReactJS | Redux | AWS | Git</span>
+          <button class="btn">Know more</button>
+        </div>
+        <!-- project 2 -->
+
+        <div class="project-container">
+          <a href="https://arnoob.app" target="_blank">
+            <span class="title">Arnooob</span>
+          </a>
+          <a href="https://linkia.qa/" target="_blank">
+            <span class="company_title">© Linkia </span>
+          </a>
+          <p>
+            E-commerce application store for kids, selling video games and
+            learning games with a feature to customize events for a specefic
+            number of kids based on a theme.
+          </p>
+          <span class="subtitle">Technologies</span>
+          <span class="technologies">ReactJS | Redux | Laravel | Git</span>
+          <button class="btn">Know more</button>
+        </div>
+        <!-- project 3 -->
+        <div class="project-container">
+          <a href="https://dailyway.eu" target="_blank">
+            <span class="title">Dailyway</span>
+          </a>
+          <a href="https://www.siniway.ad/" target="_blank">
+            <span class="company_title">© Siniway </span>
+          </a>
+          <p>
+            Scheduling platform for Businesses, that connects clients with
+            customers through a shared calendar.
+          </p>
+          <span class="subtitle">Technologies</span>
+          <span class="technologies">ReactJS | Redux | Git | Figma</span>
+          <button class="btn">Know more</button>
+        </div>
+      </section>
+      <section id="freelance_projects" class="projects">
+        <h1>Freelance Projects</h1>
+        <!-- project 1 -->
+        <div class="project-container">
+          <a href="https://educaus.net" target="_blank">
+            <span class="title">Educa US</span>
+          </a>
+          <p>Travel & Education Agency Blog website based in Tunisia.</p>
+          <span class="subtitle">Technologies</span>
+          <span class="technologies">Svelte | Wordpress | Git | Figma</span>
+          <button class="btn">Know more</button>
+        </div>
+        <!-- project 2 -->
+
+        <div class="project-container">
+          <a href="https://wok-time.tn/" target="_blank">
+            <span class="title">Wok-Time</span>
+          </a>
+          <p>Thai Food Restaurent website</p>
+          <span class="subtitle">Technologies</span>
+          <span class="technologies">JQuery | CSS </span>
+          <button class="btn">Know more</button>
+        </div>
+        <!-- project 3 -->
       </section>
     </div>
   </body>
