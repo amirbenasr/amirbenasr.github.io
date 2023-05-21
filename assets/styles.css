@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 :root {
-  --bg-color: #f2e8e5;
+  --bg-color: #f8f6f4;
   --primary-color: #38a3da;
   --variant-color: #01447d;
   --water-color: #4c8e97;
@@ -15,6 +15,7 @@ html {
   font-family: "Montserrat", sans-serif;
   padding: 0;
   margin: 0;
+  scroll-behavior: smooth;
 }
 section {
   padding: 1rem;
@@ -129,6 +130,8 @@ small,
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  gap: 1rem;
   overflow: hidden;
 }
 .details {
@@ -139,6 +142,7 @@ small,
 }
 .introduction-text {
   /* max-height: 300px; */
+  max-width: 50%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -231,4 +235,7 @@ span.subtitle {
   font-weight: 400;
   margin-bottom: var(--project-margin);
   color: var(--primary-color);
+}
+.container {
+  margin: 0 auto;
 }
